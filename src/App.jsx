@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function esPrimo(numero) {
   if (numero == 2) return true;
-  if (numero <= 1 || numero % 2 == 0 || numero % 5 == 0) return false;
+  if (numero <= 1 || numero % 2 == 0) return false;
   for (let i = 3; i <= Math.sqrt(numero); i += 2) {
     if (numero % i == 0) return false;
   }
