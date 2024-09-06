@@ -18,7 +18,7 @@ function App() {
         {numeroPrimo}
         <div className="flex gap-5 font-thin">
           <button
-            className="border border-black rounded p-3"
+            className="border border-black rounded p-3 hover:shadow-2xl	transition duration-300"
             onClick={() => {
               for (let i = numeroPrimo + 1; true; i++) {
                 if (esPrimo(i)) {
@@ -31,7 +31,7 @@ function App() {
             Aumentar
           </button>
           <button
-            className="border border-black rounded p-3"
+            className="border border-black rounded p-3 hover:shadow-2xl	transition duration-300"
             onClick={() => {
               for (let i = numeroPrimo - 1; i > 1; i--) {
                 console.log(esPrimo(i));
